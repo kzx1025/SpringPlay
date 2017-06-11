@@ -1,0 +1,51 @@
+[INFO] [2017-06-09 00:13:54][org.springframework.test.context.support.DefaultTestContextBootstrapper]Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO] [2017-06-09 00:13:54][org.springframework.test.context.support.DefaultTestContextBootstrapper]Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1d8dd769, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4b393da7, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1afec586, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4c59ee42, org.springframework.test.context.transaction.TransactionalTestExecutionListener@24295637, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@15db476d]
+[INFO] [2017-06-09 00:13:55][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from URL [file:src/main/webapp/WEB-INF/spring.xml]
+[INFO] [2017-06-09 00:13:55][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from URL [file:src/main/webapp/WEB-INF/spring-mybatis.xml]
+[INFO] [2017-06-09 00:13:55][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@3057d6ee: startup date [Fri Jun 09 00:13:55 CST 2017]; root of context hierarchy
+[INFO] [2017-06-09 00:13:56][org.springframework.context.support.PropertySourcesPlaceholderConfigurer]Loading properties file from class path resource [db.properties]
+[INFO] [2017-06-09 00:13:57][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG] [2017-06-09 00:13:57][com.springdemo.mapper.UserMapper.findById]==>  Preparing: SELECT user_id id,user_name userName,user_age age FROM t_user WHERE user_id = ? 
+[DEBUG] [2017-06-09 00:13:57][com.springdemo.mapper.UserMapper.findById]==> Parameters: 4(Integer)
+[DEBUG] [2017-06-09 00:13:57][com.springdemo.mapper.UserMapper.findById]<==      Total: 0
+[INFO] [2017-06-09 00:13:57][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@3057d6ee: startup date [Fri Jun 09 00:13:55 CST 2017]; root of context hierarchy
+[INFO] [2017-06-09 00:13:57][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO] [2017-06-09 00:14:29][org.springframework.test.context.support.DefaultTestContextBootstrapper]Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[INFO] [2017-06-09 00:14:29][org.springframework.test.context.support.DefaultTestContextBootstrapper]Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@26651f73, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@38f3cab6, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@d818ff0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3510dc7d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@65fbadc2, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6e4ccfdc]
+[INFO] [2017-06-09 00:14:29][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from URL [file:src/main/webapp/WEB-INF/spring.xml]
+[INFO] [2017-06-09 00:14:30][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from URL [file:src/main/webapp/WEB-INF/spring-mybatis.xml]
+[INFO] [2017-06-09 00:14:30][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@19f67d34: startup date [Fri Jun 09 00:14:30 CST 2017]; root of context hierarchy
+[INFO] [2017-06-09 00:14:30][org.springframework.context.support.PropertySourcesPlaceholderConfigurer]Loading properties file from class path resource [db.properties]
+[INFO] [2017-06-09 00:14:31][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG] [2017-06-09 00:14:32][com.springdemo.mapper.UserMapper.findById]==>  Preparing: SELECT user_id id,user_name userName,user_age age FROM t_user WHERE user_id = ? 
+[DEBUG] [2017-06-09 00:14:32][com.springdemo.mapper.UserMapper.findById]==> Parameters: 3(Integer)
+[TRACE] [2017-06-09 00:14:32][com.springdemo.mapper.UserMapper.findById]<==    Columns: id, userName, age
+[TRACE] [2017-06-09 00:14:32][com.springdemo.mapper.UserMapper.findById]<==        Row: 3, wf, 24
+[DEBUG] [2017-06-09 00:14:32][com.springdemo.mapper.UserMapper.findById]<==      Total: 1
+[INFO] [2017-06-09 00:14:32][TestMyBatis]username:wf , userAge=24
+[DEBUG] [2017-06-09 00:14:32][com.springdemo.mapper.UserMapper.insert]==>  Preparing: INSERT INTO t_user(user_id,user_name,user_age) VALUES(?,?,?); 
+[DEBUG] [2017-06-09 00:14:32][com.springdemo.mapper.UserMapper.insert]==> Parameters: 4(Integer), Toby(String), 28(String)
+[DEBUG] [2017-06-09 00:14:32][com.springdemo.mapper.UserMapper.insert]<==    Updates: 1
+[DEBUG] [2017-06-09 00:14:32][com.springdemo.mapper.UserMapper.findById]==>  Preparing: SELECT user_id id,user_name userName,user_age age FROM t_user WHERE user_id = ? 
+[DEBUG] [2017-06-09 00:14:32][com.springdemo.mapper.UserMapper.findById]==> Parameters: 4(Integer)
+[TRACE] [2017-06-09 00:14:32][com.springdemo.mapper.UserMapper.findById]<==    Columns: id, userName, age
+[TRACE] [2017-06-09 00:14:32][com.springdemo.mapper.UserMapper.findById]<==        Row: 4, Toby, 28
+[DEBUG] [2017-06-09 00:14:32][com.springdemo.mapper.UserMapper.findById]<==      Total: 1
+[DEBUG] [2017-06-09 00:14:32][com.springdemo.mapper.UserMapper.update]==>  Preparing: UPDATE t_user SET user_name = ?, user_age = ? WHERE user_id = ? 
+[DEBUG] [2017-06-09 00:14:32][com.springdemo.mapper.UserMapper.update]==> Parameters: Toby(String), 27(String), 4(Integer)
+[DEBUG] [2017-06-09 00:14:32][com.springdemo.mapper.UserMapper.update]<==    Updates: 1
+[DEBUG] [2017-06-09 00:14:32][com.springdemo.mapper.UserMapper.getAll]==>  Preparing: SELECT user_id,user_name,user_age FROM t_user 
+[DEBUG] [2017-06-09 00:14:32][com.springdemo.mapper.UserMapper.getAll]==> Parameters: 
+[TRACE] [2017-06-09 00:14:32][com.springdemo.mapper.UserMapper.getAll]<==    Columns: user_id, user_name, user_age
+[TRACE] [2017-06-09 00:14:32][com.springdemo.mapper.UserMapper.getAll]<==        Row: 1, kzx, 23
+[TRACE] [2017-06-09 00:14:32][com.springdemo.mapper.UserMapper.getAll]<==        Row: 3, wf, 24
+[TRACE] [2017-06-09 00:14:32][com.springdemo.mapper.UserMapper.getAll]<==        Row: 4, Toby, 27
+[DEBUG] [2017-06-09 00:14:32][com.springdemo.mapper.UserMapper.getAll]<==      Total: 3
+[INFO] [2017-06-09 00:14:32][TestMyBatis]username:kzx , userAge=23
+[INFO] [2017-06-09 00:14:32][TestMyBatis]username:wf , userAge=24
+[INFO] [2017-06-09 00:14:32][TestMyBatis]username:Toby , userAge=27
+[DEBUG] [2017-06-09 00:14:32][com.springdemo.mapper.UserMapper.deleteById]==>  Preparing: DELETE FROM t_user WHERE user_id = ? 
+[DEBUG] [2017-06-09 00:14:32][com.springdemo.mapper.UserMapper.deleteById]==> Parameters: 3(Integer)
+[DEBUG] [2017-06-09 00:14:32][com.springdemo.mapper.UserMapper.deleteById]<==    Updates: 1
+[INFO] [2017-06-09 00:14:32][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@19f67d34: startup date [Fri Jun 09 00:14:30 CST 2017]; root of context hierarchy
+[INFO] [2017-06-09 00:14:32][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
