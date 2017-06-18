@@ -1,8 +1,11 @@
 package com.springdemo.model;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * Created by iceke on 17/6/8.
  */
+@XmlRootElement
 public class User {
 
     private int id;
